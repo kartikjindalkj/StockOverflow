@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}"
+</head>
+<body>
+<header>
+<div class="container">
+<h1 class="logo">This is the introductory page to appear on the website. It will contain the logo ,etc.</h1>
+<strong><nav>
+<ul class="menu">
+  <li><a href="{{url_for('home')}}">HOME</a></li>
+ <li><a href="{{url_for('brochure')}}">ADD WALLET</a></li>
+
+</ul>
+</nav></strong>
+</div>
+<div class="container">
+  <h1>Welcome to STOCKOVERFLOW!!!</h1>
+  <form action="payment" method="POST">
+    <input title="Your data is safe" placeholder="Enter the company name" type="text" name="stock_company" required><br>
+    <input title="Your data is safe" placeholder="Enter the stock ID" type="number" name="stock_id" required><br>
+    <input title="Your data is safe" placeholder="Enter the quantity of stocks" type="number" name="stock_quantity" required><br>
+    <input title="Your data is safe" placeholder="Enter the price of each stock" type="number" name="stock_price" required><br>
+    <button type="submit">Proceed</button>
+  </form>
+  </body>
+</div>
+</header>
+  </html>

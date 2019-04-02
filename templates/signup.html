@@ -1,0 +1,23 @@
+{%extends "navigation.html"%}
+{%block content%}
+<!DOCTYPE html>
+<html>
+<head>sign up page!</head>
+<body>
+  <h1>This page will contain the signup options.(wp2)<h1>
+    <form action="success" method="POST">
+      <input title="Your data is safe" placeholder="Enter your email id" type="email" name="email_name" required><br>
+      <input title="Your data is safe" placeholder="Enter your first name" type="text" name="first_name" required><br>
+      <input title="Your data is safe" placeholder="Enter your last name" type="text" name="last_name" required><br>
+      <input title="Your data is safe" placeholder="Enter your cell number" type="number" name="cell_number" required><br>
+      <input title="Your data is safe" placeholder="Enter your permanent address" type="text" name="address_name" required><br>
+      <input title="Your data is safe" placeholder="Enter your customer ID" type="number" name="customer_id" required><br>
+      <input title="Your data is safe" placeholder="Enter your New password" type="password" name="new_password" required><br>
+      <input title="Your data is safe" placeholder="Enter your Income Tax ID number" type="number" name="tax_id" required><br>
+      <input title="Your data is safe" placeholder="Enter your Account Number" type="text" name="acc_number" required><br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+  </html>
+  {%endblock%}

@@ -1,0 +1,22 @@
+{%extends "navigation.html"%}
+{%block content%}
+<!DOCTYPE html>
+<html>
+<head>This is the login page for stock brochure</head>
+<div class="container">
+  <body>
+  <h1>Enter the required details to add money to your wallet<h1>
+    <form action="wallsucc" method="POST">
+      <input title="Your data is safe" placeholder="Enter your card number" type="number" name="card_num" required><br>
+      <input title="Your data is safe" placeholder="Enter your name on card" type="text" name="card_nam" required><br>
+      <input title="Your data is safe" placeholder="Enter your CVV number" type="number" name="card_cv" required><br>
+      <input title="Your data is safe" placeholder="Enter your Bank Name" type="text" name="bank_nam" required><br>
+      <input title="Your data is safe" placeholder="Enter the currency used" type="text" name="currency_use" required><br>
+      <input title="Your data is safe" placeholder="Enter the amount to transfer to wallet" type="number" name="amt" required><br>
+      <button type="submit">Proceed</button>
+    </form>
+  </body>
+</div>
+
+  </html>
+{%endblock%}

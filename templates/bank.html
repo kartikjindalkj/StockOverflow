@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}"
+</head>
+<body>
+<header>
+<div class="container">
+<h1 class="logo">This is the introductory page to appear on the website. It will contain the logo ,etc.</h1>
+<strong><nav>
+<ul class="menu">
+  <li><a href="{{url_for('home')}}">HOME</a></li>
+ <li><a href="{{url_for('brochure')}}">ADD WALLET</a></li>
+
+</ul>
+</nav></strong>
+</div>
+<div class="container">
+  <h1>This is the Bank Page<h1>
+    <form action="paysucc" method="POST">
+      <input title="Your data is safe" placeholder="Enter your card number" type="number" name="card_numb" required><br>
+      <input title="Your data is safe" placeholder="Enter your name on card" type="text" name="card_name" required><br>
+      <input title="Your data is safe" placeholder="Enter your CVV number" type="number" name="card_cvv" required><br>
+      <input title="Your data is safe" placeholder="Enter your Bank Name" type="text" name="bank_name" required><br>
+      <input title="Your data is safe" placeholder="Enter the currency used" type="text" name="currency_used" required><br>
+      <button type="submit">Proceed to Gateway</button>
+    </form>
+  </body>
+</div>
+<head>
+  </html>
