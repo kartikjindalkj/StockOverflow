@@ -1,2 +1,3 @@
 # Stock-Market
-DBMS Project 
+DBMS Project  
+StockOverflow - Stock Purchase made easy
